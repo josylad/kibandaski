@@ -93,8 +93,8 @@ $("#order").submit(function() {
     foodList.push("Avocado")
   }
 // // console.log(foodList)
-//   var result = price(total, quantity);
-//
+  var result = price(total, quantity);
+
 //   document.getElementById("custname").innerHTML = ("Name: ") + name;
 //
 //   for (var i = 0; i < foodList.length; i++) {
