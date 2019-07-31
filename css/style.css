@@ -1,3 +1,7 @@
+
+.right {
+  text-align: right;
+
 .view {
     background: url("../img/kibanda.jpg")no-repeat center center;
     background-size: cover;
@@ -17,4 +21,5 @@ body,
 header,
 .view {
   height: 100%;
+
 }
