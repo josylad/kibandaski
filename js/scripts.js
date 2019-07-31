@@ -37,11 +37,11 @@ $("#order").submit(function() {
     alert("Foods must be filled out");
     return false;
   }
-//   var address = document.forms["orderform"]["address"].value;
-//   if (address == "") {
-//     alert("Address must be filled out");
-//     return false;
-//   }
+  var address = document.forms["orderform"]["address"].value;
+  if (address == "") {
+    alert("Address must be filled out");
+    return false;
+  }
 //   var quantity = parseInt(document.forms["orderform"]["quantity"].value);
 //   if (quantity == "") {
 //     alert("Address must be filled out");
