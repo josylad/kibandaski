@@ -19,14 +19,14 @@ var foodPrice = function checkTotal() {
 // var foodList=[];
 // $(".sum-btn").hide()
 //
-// $("#order").submit(function() {
-//   event.preventDefault()
-//
-//   var name = document.forms["orderform"]["name"].value;
-//   if (name == "") {
-//     alert("Name must be filled out");
-//     return false;
-//   }
+$("#order").submit(function() {
+  event.preventDefault()
+
+  var name = document.forms["orderform"]["name"].value;
+  if (name == "") {
+    alert("Name must be filled out");
+    return false;
+  }
 //   var phone = document.forms["orderform"]["phone"].value;
 //   if (phone == "") {
 //     alert("phone must be filled out");
