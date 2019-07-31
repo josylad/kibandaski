@@ -17,7 +17,8 @@ var foodPrice = function checkTotal() {
 
 // User Interface Logic
 var foodList=[];
-// $(".sum-btn").hide()
+$(".sum-btn").hide()
+
 //
 $("#order").submit(function() {
   event.preventDefault()
@@ -108,9 +109,9 @@ $("#order").submit(function() {
   document.getElementById("phone1").innerHTML = ("Phone: ") + phone;
   document.getElementById("output").innerHTML = ("Your order Total is = ") + result + (" KES");
   alert("Your total order is " + result + " KES." + " Thank You for Ordering from KIBANDASKI! Your Order is on it's way!");
-//   $("form#checkout").css('data-dismiss','modal');
-//   $("#checkout").hide()
-//   $(".sum-btn").show()
+  $("form#checkout").css('data-dismiss','modal');
+  $("#checkout").hide()
+  $(".sum-btn").show()
 //
 //   $(".sum-btn").click(function(){
 //     $("#summary").show();
