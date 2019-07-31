@@ -16,7 +16,7 @@ var foodPrice = function checkTotal() {
 }
 
 // User Interface Logic
-// var foodList=[];
+var foodList=[];
 // $(".sum-btn").hide()
 //
 $("#order").submit(function() {
@@ -47,12 +47,12 @@ $("#order").submit(function() {
     alert("Address must be filled out");
     return false;
   }
-//   var price = function(total, quantity) {
-//     return (foods * quantity) + 50
-//   };
-//   if($("#chapatiBeans").prop("checked") == true){
-//     foodList.push("Chapati & Beans")
-//   }
+  var price = function(total, quantity) {
+    return (foods * quantity) + 50
+  };
+  // if($("#chapatiBeans").prop("checked") == true){
+  //   foodList.push("Chapati & Beans")
+  // }
 //   if($("#ugaliOmena").prop("checked") == true){
 //     foodList.push("Ugali & Omena")
 //   }
