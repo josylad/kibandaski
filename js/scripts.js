@@ -1,8 +1,4 @@
 //Business Logic
-// var price = function(total, quantity) {
-//   return (foods * quantity) + 50
-// };
-
 //Addition of Checkboxes to give total food price
 var foodPrice = function checkTotal() {
   document.orderform.total.value = '';
@@ -12,17 +8,26 @@ var foodPrice = function checkTotal() {
       sum = sum + parseInt(document.orderform.ourmenu[i].value);
     }
   }
+
   document.orderform.total.value = sum;
 }
 
+var price = function(total, quantity) {
+  return (foods * quantity) + 50
+};
+
+
+// $("#ugaliomena2").click(function(){
+//   // $("input#ugaliOmena").prop("checked", true);
+//   // $("input#ugaliOmena").delay(5000).prop("checked", false);
+//   $("input#ugaliOmena").delay(5000).prop("checked", true);
+// })
 // User Interface Logic
 var foodList=[];
 $(".sum-btn").hide()
 
-//
 $("#order").submit(function() {
   event.preventDefault()
-
   var name = document.forms["orderform"]["name"].value;
   if (name == "") {
     alert("Name must be filled out");
