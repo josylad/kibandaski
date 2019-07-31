@@ -27,11 +27,11 @@ $("#order").submit(function() {
     alert("Name must be filled out");
     return false;
   }
-//   var phone = document.forms["orderform"]["phone"].value;
-//   if (phone == "") {
-//     alert("phone must be filled out");
-//     return false;
-//   }
+  var phone = document.forms["orderform"]["phone"].value;
+  if (phone == "") {
+    alert("phone must be filled out");
+    return false;
+  }
 //   var foods = parseInt(document.getElementById("total").value);
 //   if (foods == "") {
 //     alert("Foods must be filled out");
