@@ -1,4 +1,11 @@
 
+.menuimages{
+  max-width: 1000px;
+  max-height: 636px;
+  margin-left: auto;
+  margin-right: auto;
+
+
 
 .right {
   text-align: right;
@@ -22,6 +29,5 @@ body,
 header,
 .view {
   height: 100%;
-
 
 }
