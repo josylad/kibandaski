@@ -106,7 +106,7 @@ $("#order").submit(function() {
 //
   document.getElementById("address1").innerHTML = ("Address: ") + address;
   document.getElementById("phone1").innerHTML = ("Phone: ") + phone;
-//   document.getElementById("output").innerHTML = ("Your order Total is = ") + result + (" KES");
+  document.getElementById("output").innerHTML = ("Your order Total is = ") + result + (" KES");
 //   alert("Your total order is " + result + " KES." + " Thank You for Ordering from KIBANDASKI! Your Order is on it's way!");
 //   $("form#checkout").css('data-dismiss','modal');
 //   $("#checkout").hide()
