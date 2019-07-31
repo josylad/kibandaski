@@ -32,11 +32,11 @@ $("#order").submit(function() {
     alert("phone must be filled out");
     return false;
   }
-//   var foods = parseInt(document.getElementById("total").value);
-//   if (foods == "") {
-//     alert("Foods must be filled out");
-//     return false;
-//   }
+  var foods = parseInt(document.getElementById("total").value);
+  if (foods == "") {
+    alert("Foods must be filled out");
+    return false;
+  }
 //   var address = document.forms["orderform"]["address"].value;
 //   if (address == "") {
 //     alert("Address must be filled out");
