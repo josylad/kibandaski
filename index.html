@@ -400,7 +400,7 @@
         <p class="card-text">A frequently requested combo that goes well together.Add some extras on
            top and you have yourself a nice dish. Simple and satisfying.
   </p>
-        <a href="#" class="btn btn-primary">Button</a>
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Button</a>
       </div>
   ​
     </div>
@@ -413,122 +413,147 @@
   </div>
 
   <!--Grid row-->
-  <form class="border border-light p-5" id="order" name="orderForm">
+  <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
-    <p class="h4 mb-4 text-center">ORDER FORM</p>
+    Modal content
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <div id="orderform1" class="orderfood">
+    <form class="border border-light p-5" id="order" name="orderform" method="post">
+     <p class="h4 mb-4 text-center">ORDER FORM</p>
+     <label for="Name">Name:</label>
+     <input type="text" name="name" id="Name" class="form-control mb-4" placeholder="Name">
+     <label for="phone">Phone Number:</label>
+     <input type="number" name="phone" id="phone" class="form-control mb-4" placeholder="Phone">
+     <label for="email">Email:</label>
+     <input type="email" name="email" id="email" class="form-control mb-4" placeholder="Email">
+     <label for="address">Delivery Address:</label>
+     <input type="text" id="address" name="address" class="form-control mb-4" placeholder="Delivery Address">
+     <div class="conatiner">
+       <div class="row">
+         <div class="col-6">
+           <strong><h2>MENU</h2></strong>
+           <br>
+         </div>
+         <div class="col-6">
+           <strong><h2>EXTRAS</h2></strong>
+           <br>
+         </div>
+       </div>
+       </div>
+       <div class="row">
+         <div class="col-md-6">
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" value="70" name="ourmenu" id="chapatiBeans" onchange="foodPrice()" />
+             <label class="custom-control-label" for="chapatiBeans">Chapati & Beans</label>
+           </div>
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" value="60" name="ourmenu" id="ugaliOmena" onchange="foodPrice()" />
+             <label class="custom-control-label" for="ugaliOmena">Ugali & Omena</label>
+           </div>
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" value="60" name="ourmenu" id="riceBeans" onchange="foodPrice()" />
+             <label class="custom-control-label" for="riceBeans">Rice & Beans</label>
+           </div>
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" value="90" name="ourmenu" id="pilau" onchange="foodPrice()" />
+             <label class="custom-control-label" for="pilau">Pilau</label>
+           </div>
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" value="80" name="ourmenu" id="chapatiBeefStew" onchange="foodPrice()" />
+             <label class="custom-control-label" for="chapatiBeefStew">Chapati & Beef Stew</label>
+           </div>
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" value="80" name="ourmenu" id="ugaliBeefStew" onchange="foodPrice()" />
+             <label class="custom-control-label" for="ugaliBeefStew">Ugali & Beef Stew</label>
+           </div>
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" value="100" name="ourmenu" id="riceBeefStew" onchange="foodPrice()" />
+             <label class="custom-control-label" for="riceBeefStew">Rice & Beef Stew</label>
+           </div>
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" value="55" name="ourmenu" id="githeri" onchange="foodPrice()" />
+             <label class="custom-control-label" for="githeri">Githeri</label>
+           </div>
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" value="60" name="ourmenu" id="chapatiNdengu" onchange="foodPrice()" />
+             <label class="custom-control-label" for="chapatiNdengu">Chapati & Ndengu</label>
+           </div>
+           <p><strong>Total for Food:</strong> <input type="number" size="2" name="total" value="" class="form-control" id="total" /></p>
+         </div>
 
-    <label for="Name">Name:</label>
-    <input type="text" name="Name" id="Name" class="form-control mb-4" placeholder="Name">
-    <label for="phone">Phone Number:</label>
-    <input type="number" name="phone" id="phone" class="form-control mb-4" placeholder="Text input">
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" class="form-control mb-4" placeholder="Email">
+         <div class="col-md-6">
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" name="sukuma" id="sukuma">
+             <label class="custom-control-label" for="sukuma">Sukuma</label>
+           </div>
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" name="cabbage" id="cabbage">
+             <label class="custom-control-label" for="cabbage">Cabbage</label>
+           </div>
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" name="kachumbari" id="kachumbari">
+             <label class="custom-control-label" for="kachumbari">Kachumbari</label>
+           </div>
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" name="soup" id="soup">
+             <label class="custom-control-label" for="soup">Soup</label>
+           </div>
+           <div class="custom-control custom-checkbox mb-4">
+             <input type="checkbox" class="custom-control-input" name="avocado" id="avocado">
+             <label class="custom-control-label" for="avocado">Avocado</label>
+           </div>
+         </div>
+       </div>
+       <label for="quantity">Quantity</label>
+       <input type="number" min="1" name="quantity" id="quantity" class="form-control mb-4" placeholder="Quantity">
+       <label for="comment">Comments</label>
+       <textarea class="form-control rounded-0" id="comment" name="comment" rows="3" placeholder="Message"></textarea>
+       <br>
+       <button class="btn btn-info btn-block" id="checkout" type="submit" name="submit">Submit Order</button>
+<button type="button" class="btn btn-block sum-btn btn-default" data-dismiss="modal">Go Order Summary</button>
+   </form>
 
-    <label for="address">Delivery Address:</label>
-    <input type="text" id="address" name="address" class="form-control mb-4" placeholder="Delivery Address">
-    <div class="conatiner">
-      <div class="row">
-        <div class="col-6">
-          <strong><h2>MENU</h2></strong>
-          <br>
-        </div>
-
-        <div class="col-6">
-          <strong><h2>EXTRAS</h2></strong>
-          <br>
-        </div>
+  </div>
+      </div>
+      <div class="modal-footer">
 
       </div>
-      </div>
+    </div>
 
+  </div>
+</div>
+  <!-- END ORDER FORM -->
+      <div class="container mb-4" id="summary">
+        <h3 class="">ORDER SUMMARY</h3> <br>
 
+        <div class="row">
+          <div class="col-md-6">
+            <h5 id="custname">
 
+            </h5>
+            <h5>Ordered Food:</h5>
+            <ul id="foodList">
 
-      <div class="row">
+            </ul>
+            <h5 id="address1">
 
-        <div class="col-md-6">
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="chapatiBeans" id="chapatiBeans">
-            <label class="custom-control-label" for="checkbox">Chapati & Beans</label>
+            </h5>
+            <h5 id="phone1">
+
+            </h5>
+            <h5 id="output">
+            </h5>
+
           </div>
-
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="ugaliOmena" id="ugaliOmena">
-            <label class="custom-control-label" for="checkbox">Ugali & Omena</label>
-          </div>
-
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="riceBeans" id="riceBeans">
-            <label class="custom-control-label" for="checkbox">Rice & Beans</label>
-          </div>
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="pilau" id="pilau">
-            <label class="custom-control-label" for="checkbox">Pilau</label>
-          </div>
-
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="chapatiBeefStew" id="chapatiBeefStew">
-            <label class="custom-control-label" for="checkbox">Chapati & Beef Stew</label>
-          </div>
-
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="ugaliBeefStew" id="ugaliBeefStew">
-            <label class="custom-control-label" for="checkbox">Ugali & Beef Stew</label>
-          </div>
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="riceBeefStew" id="riceBeefStew">
-            <label class="custom-control-label" for="checkbox">Rice & Beef Stew</label>
-          </div>
-
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="githeri" id="githeri">
-            <label class="custom-control-label" for="checkbox">Githeri</label>
-          </div>
-
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="chapatiNdengu" id="chapatiNdengu">
-            <label class="custom-control-label" for="checkbox">Chapati & Ndengu</label>
-          </div>
-
         </div>
-
-        <div class="col-md-6">
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="sukuma" id="sukuma">
-            <label class="custom-control-label" for="checkbox">Sukuma</label>
-          </div>
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="cabbage" id="cabbage">
-            <label class="custom-control-label" for="checkbox">Cabbage</label>
-          </div>
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="kachumbari" id="kachumbari">
-            <label class="custom-control-label" for="checkbox">Kachumbari</label>
-          </div>
-
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="soup" id="soup">
-            <label class="custom-control-label" for="checkbox">Soup</label>
-          </div>
-
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" name="avocado" id="avocado">
-            <label class="custom-control-label" for="checkbox">Avocado</label>
-          </div>
-
-        </div>
-
       </div>
-
-
-      <label for="quantity">Quantity</label>
-      <input type="number" name="quantity" id="quantity" class="form-control mb-4" placeholder="Quantity">
-
-      <label for="comment">Comments</label>
-      <textarea class="form-control rounded-0" id="comment" name="comment" rows="3" placeholder="Message"></textarea>
-      <br>
-      <button class="btn btn-info btn-block" type="submit">Submit Order</button>
-  </form>
 
 
   <!--Footer-->
@@ -602,7 +627,7 @@
 </footer>
 <!-- Footer -->
   <!--Footer-->
-  
+
 
 
 <!--Grid row-->
@@ -616,6 +641,9 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js">
+
+  </script>
 </body>
 ​
 </html>
