@@ -96,12 +96,12 @@ $("#order").submit(function() {
   var result = price(total, quantity);
 
   document.getElementById("custname").innerHTML = ("Name: ") + name;
-//
-//   for (var i = 0; i < foodList.length; i++) {
-//         $("#foodList").append(
-//           "<li>"+foodList[i]+"</li>"
-//         )
-//   }
+
+  for (var i = 0; i < foodList.length; i++) {
+        $("#foodList").append(
+          "<li>"+foodList[i]+"</li>"
+        )
+  }
 //   // $("#address1").text(address)
 //
 //   document.getElementById("address1").innerHTML = ("Address: ") + address;
