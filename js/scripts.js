@@ -50,48 +50,48 @@ $("#order").submit(function() {
   var price = function(total, quantity) {
     return (foods * quantity) + 50
   };
-  // if($("#chapatiBeans").prop("checked") == true){
-  //   foodList.push("Chapati & Beans")
-  // }
-//   if($("#ugaliOmena").prop("checked") == true){
-//     foodList.push("Ugali & Omena")
-//   }
-//   if($("#riceBeans").prop("checked") == true){
-//     foodList.push("Rice & Beans")
-//   }
-//   if($("#pilau").prop("checked") == true){
-//     foodList.push("Pilau")
-//   }
-//   if($("#chapatiBeefStew").prop("checked") == true){
-//     foodList.push("Chapati & Beef Stew")
-//   }
-//   if($("#ugaliBeefStew").prop("checked") == true){
-//     foodList.push("Ugali & Beef Stew")
-//   }
-//   if($("#riceBeefStew").prop("checked") == true){
-//     foodList.push("Rice & Beef Stew")
-//   }
-//   if($("#githeri").prop("checked") == true){
-//     foodList.push("Githeri")
-//   }
-//   if($("#chapatiNdengu").prop("checked") == true){
-//     foodList.push("Chapati & Ndengu")
-//   }
-//   if($("#sukuma").prop("checked") == true){
-//     foodList.push("Sukuma")
-//   }
-//   if($("#cabbage").prop("checked") == true){
-//     foodList.push("Cabbage")
-//   }
-//   if($("#kachumbari").prop("checked") == true){
-//     foodList.push("Kachumbari")
-//   }
-//   if($("#soup").prop("checked") == true){
-//     foodList.push("Soup")
-//   }
-//   if($("#avocado").prop("checked") == true){
-//     foodList.push("Avocado")
-//   }
+  if($("#chapatiBeans").prop("checked") == true){
+    foodList.push("Chapati & Beans")
+  }
+  if($("#ugaliOmena").prop("checked") == true){
+    foodList.push("Ugali & Omena")
+  }
+  if($("#riceBeans").prop("checked") == true){
+    foodList.push("Rice & Beans")
+  }
+  if($("#pilau").prop("checked") == true){
+    foodList.push("Pilau")
+  }
+  if($("#chapatiBeefStew").prop("checked") == true){
+    foodList.push("Chapati & Beef Stew")
+  }
+  if($("#ugaliBeefStew").prop("checked") == true){
+    foodList.push("Ugali & Beef Stew")
+  }
+  if($("#riceBeefStew").prop("checked") == true){
+    foodList.push("Rice & Beef Stew")
+  }
+  if($("#githeri").prop("checked") == true){
+    foodList.push("Githeri")
+  }
+  if($("#chapatiNdengu").prop("checked") == true){
+    foodList.push("Chapati & Ndengu")
+  }
+  if($("#sukuma").prop("checked") == true){
+    foodList.push("Sukuma")
+  }
+  if($("#cabbage").prop("checked") == true){
+    foodList.push("Cabbage")
+  }
+  if($("#kachumbari").prop("checked") == true){
+    foodList.push("Kachumbari")
+  }
+  if($("#soup").prop("checked") == true){
+    foodList.push("Soup")
+  }
+  if($("#avocado").prop("checked") == true){
+    foodList.push("Avocado")
+  }
 // // console.log(foodList)
 //   var result = price(total, quantity);
 //
