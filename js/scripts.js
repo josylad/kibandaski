@@ -120,3 +120,18 @@ $("#order").submit(function() {
     },1000)
   })
 })
+//////////////////////////JOSEPH'S CODE ARE ABOVE
+//////// DAISY'S CODE BELOW
+$(document).ready(function () {
+ $("button#button2").click(function () {
+   var subject2 = $("input#subject").val();
+   var message2 = $("textarea#message2").val();
+   var email2 = $("input#email2").val();
+   var name2 = $("input#name2").val();
+   if ($("input#name2").val() && $("input#email2").val() && $("textarea#message2").val() && $("input#subject").val() != "") {
+     alert(name2 + ". Thank you for contacting us!!");
+   } else {
+     alert("please enter your name,email,subject and message.")
+   }
+ });
+});
