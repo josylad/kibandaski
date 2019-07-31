@@ -42,11 +42,11 @@ $("#order").submit(function() {
     alert("Address must be filled out");
     return false;
   }
-//   var quantity = parseInt(document.forms["orderform"]["quantity"].value);
-//   if (quantity == "") {
-//     alert("Address must be filled out");
-//     return false;
-//   }
+  var quantity = parseInt(document.forms["orderform"]["quantity"].value);
+  if (quantity == "") {
+    alert("Address must be filled out");
+    return false;
+  }
 //   var price = function(total, quantity) {
 //     return (foods * quantity) + 50
 //   };
