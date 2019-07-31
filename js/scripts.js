@@ -112,11 +112,11 @@ $("#order").submit(function() {
   $("form#checkout").css('data-dismiss','modal');
   $("#checkout").hide()
   $(".sum-btn").show()
-//
-//   $(".sum-btn").click(function(){
-//     $("#summary").show();
-//     $("body, html").animate({
-//       scrollTop: $("#summary").offset().top
-//     },1000)
-//   })
-// })
+
+  $(".sum-btn").click(function(){
+    $("#summary").show();
+    $("body, html").animate({
+      scrollTop: $("#summary").offset().top
+    },1000)
+  })
+})
