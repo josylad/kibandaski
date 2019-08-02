@@ -2,6 +2,9 @@
 #### Food ordering website, 01/08/2019
 ## Description
 This is a project that contains a website for ordering from a kibanda and then it will be delivered to the address they provide.
+
+##Screenshot
+<img src="../img/kibandaski.png" width="1000">
 ## Deployment
 *
 ## Set-up and installation
