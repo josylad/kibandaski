@@ -7,7 +7,7 @@ This is a project that contains a website for ordering from a kibanda and then i
 <img src="img/kibandaski.png" width="1000">
 
 ## Deployment
-https://marcusjnls.github.io/kibandaski
+https://josylad.github.io/kibandaski
 
 ## Set-up and installation
 * Fork the project
